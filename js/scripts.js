@@ -11,6 +11,11 @@ function PigLatinT(str){
           index = strarr.indexOf(strarr[i]);
         }
       }
+      if((strarr[i])&& (strarr[i-1] === "q")){
+        var slice_point = i+1;
+      }else{
+        var slice_point = i;
+      }
     }
   }
   if(index != 0){
